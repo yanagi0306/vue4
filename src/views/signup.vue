@@ -58,12 +58,8 @@ export default {
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.mailaddress, this.password)
-        .then(() => {
-          alert('登録成功');
-        })
-        .catch(() => {
-          alert('登録失敗');
-        });
+        .then()
+        .catch();
     },
   },
 };

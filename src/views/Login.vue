@@ -46,12 +46,8 @@ export default {
       firebase
         .auth()
         .signInWithEmailAndPassword(this.mailaddress, this.password)
-        .then(() => {
-          alert('ログイン成功');
-        })
-        .catch(() => {
-          alert('ログイン失敗');
-        });
+        .then()
+        .catch();
     },
   },
 };
